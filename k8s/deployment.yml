@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-app
-          image: devops-lab-app
-          imagePullPolicy: Never
+          image: ghcr.io/mishragaurav08/devops-virtual-lab:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
