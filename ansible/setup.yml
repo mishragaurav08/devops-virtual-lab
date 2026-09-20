@@ -1,0 +1,14 @@
+---
+- name: Configure EC2 server
+  hosts: devops
+  become: yes
+
+  tasks:
+    - name: Install Docker using yum
+      raw: yum install -y docker
+
+    - name: Start and enable Docker
+      service:
+        name: docker
+        state: started
+        enabled: yes

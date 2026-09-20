@@ -1,0 +1,29 @@
+# Python virtual environments
+.venv/
+.venv-ansible/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and private keys
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# Terraform local files and state
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# macOS
+.DS_Store
+ansible/inventory.ini.local
